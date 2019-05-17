@@ -54,4 +54,3 @@ Host mdecorte-private
     User ec2-user
     IdentityFile ~/.ssh/DeCorte.pem
 	ProxyCommand ssh ec2-user@bastion nc %h %p
-
