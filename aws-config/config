@@ -1,0 +1,9 @@
+[default]
+output = text
+region = us-east-1
+[profile Adminstrator]
+output = text
+region = us-east-1
+[profile mdecorte]
+output = text
+region = us-east-1

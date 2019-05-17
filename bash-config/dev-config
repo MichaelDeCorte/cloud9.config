@@ -1,0 +1,5 @@
+export PACKAGEROOT=$HOME/LambdaExample/thirdSource
+export NPMBIN="$HOME/LambdaExample/thirdSource/node_modules/.bin/"
+PATH=$PATH:$NPMBIN
+
+export ENVIRONMENT=$(cd $PACKAGEROOT; terraform workspace show)

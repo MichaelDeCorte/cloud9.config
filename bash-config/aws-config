@@ -1,0 +1,4 @@
+#!/bin/sh
+
+export AWS_SDK_LOAD_CONFIG=TRUE # https://github.com/aws/aws-sdk-js/pull/1391
+export AWS_ACCOUNT_ID=3458-7928-9395

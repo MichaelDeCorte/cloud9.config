@@ -1,0 +1,15 @@
+
+# turn off programmable  auto completion                                                                                                                                           
+complete -r
+
+PS1='\n\u@\e[0;36m\h\e[0m:\w\n$ '
+
+alias ls='ls -FC'
+
+PATH=$HOME/bin:$PATH
+
+source emacs-config
+source aws-config
+source dev-config
+
+
