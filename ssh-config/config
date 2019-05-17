@@ -1,0 +1,57 @@
+# ec2-52-222-81-172.us-gov-west-1.compute.amazonaws.com
+# MichaelsiMac-76
+# MichaelsMacbookPro
+Host *.compute.amazonaws.com
+    IdentityFile ~/.ssh/DeCorte.pem
+     User ec2-user
+
+Host *.compute-1.amazonaws.com
+    IdentityFile ~/.ssh/DeCorte.pem
+     User ec2-user
+
+Host github.com
+     HostName github.com
+     User git
+     IdentityFile ~/.ssh/github.com.pem
+
+Host chef-*.us-east-1.opsworks-cm.io
+     IdentityFile ~/.ssh/DeCorte.pem
+     User ec2-user
+
+Host 18.*
+     IdentityFile ~/.ssh/DeCorte.pem
+     User ec2-user
+
+# Host 54.152.66.33   # dev
+#      IdentityFile ~/.ssh/DeCorte.pem
+#      User ec2-user
+
+Host uat-bastion
+    HostName ec2-34-226-210-133.compute-1.amazonaws.com
+    User mdecorte
+    IdentityFile ~/.ssh/DeCorte.pem
+
+Host uat-private
+    HostName ip-192-168-2-25.ec2.internal
+    User mdecorte
+    IdentityFile ~/.ssh/DeCorte.pem
+	ProxyCommand ssh mdecorte@uat-bastion nc %h %p
+
+Host ethereum
+    HostName ec2-54-236-220-219.compute-1.amazonaws.com
+    User ec2-user
+    IdentityFile ~/.ssh/maruti.pem
+
+############################################################
+
+Host bastion
+    HostName OEB-Bastion-Shared.opinioneconomy.io
+    User ec2-user
+    IdentityFile ~/.ssh/DeCorte.pem
+
+Host mdecorte-private
+    HostName 192.173.2.35
+    User ec2-user
+    IdentityFile ~/.ssh/DeCorte.pem
+	ProxyCommand ssh ec2-user@bastion nc %h %p
+
