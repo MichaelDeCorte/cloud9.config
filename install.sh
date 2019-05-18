@@ -8,9 +8,6 @@
 
 set -e
 
-unzip -n cloud9.zip
-
-
 
 ##############################
 echo ========== bash
