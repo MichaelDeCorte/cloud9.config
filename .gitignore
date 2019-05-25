@@ -52,3 +52,9 @@ coverage/
 #############################################################
 # Apple OSX stuff
 .DS_Store
+
+
+*.pem
+*.key
+credentials*
+*.csv            
